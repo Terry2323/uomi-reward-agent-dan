@@ -1,17 +1,16 @@
 {
-  "name": "uomi-reward-agent-dani",
+  "name": "uomi-reward-agent-dan",
   "version": "1.0.0",
-  "description": "Dani - UOMI Reward Agent (WASP-ready)",
-  "main": "src/agent.ts",
+  "type": "module",
   "scripts": {
     "start": "ts-node src/agent.ts",
-    "build": "tsc"
-  },
-  "engines": {
-    "node": "18.x"
+    "deploy": "uomi deploy"
   },
   "dependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.5"
+    "@uomi-ai/wasp": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1"
   }
 }
