@@ -1,15 +1,25 @@
-# Dani — UOMI Reward Agent (WASP-ready)
+# UOMI Reward Agent (Dani)
 
-Rewards users in **UOMI** for milestones:
+🚀 A simple reward agent built with the UOMI WASP SDK.  
+This agent rewards users in **UOMI tokens** for:
 - First faucet claim → 10 UOMI
-- Daily active → 5 UOMI
+- Daily activity → 5 UOMI
 
-## Quick steps (phone-friendly)
+### Wallet
+`0x5da08546bff22a41b596424d454eb4191add0035`
 
-1. Create repo `uomi-reward-agent-dani` on GitHub.
-2. Add files exactly as provided (`package.json`, `src/agent.ts`, `.gitignore`, etc.)
-3. Deploy to Railway (steps below).
+---
 
-## Notes
-- Script runs in **simulation** by default so it always starts and prints reward logs.
-- To enable real rewards, install the WASP SDK (`@uomi/wasp` or package name from docs) and add any required private keys as Railway env variables.
+## Deployment (Replit Guide)
+
+You can run this agent 100% free on [Replit](https://replit.com).
+
+### Steps:
+1. Go to [https://replit.com](https://replit.com) → create an account.  
+2. Click **+ Create Repl** → choose **Node.js**.  
+3. Copy all the repo files into your Replit project:  
+   - `src/agent.ts` (inside `src` folder)  
+   - `package.json`, `uomi.config.json`, `README.md`, `.gitignore` (all in root).  
+4. Open the Replit **Shell** (bottom right), run:  
+   ```bash
+   npm install
